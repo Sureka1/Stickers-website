@@ -1,0 +1,30 @@
+body {
+    margin: 20px;
+    background-color: black;
+  }
+  h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+  }
+  .container > div > img {
+    height: 100px;
+    min-width: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+  }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+  .grid-layout > div:first-child {
+    grid-column: 4;
+    grid-row: 4;
+  }
+  .grid-layout > div:nth-child(10){
+      grid-column-start: 4;
+      grid-column-end: 4; 
+  }
